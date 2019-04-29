@@ -19,8 +19,7 @@
             $text = $_POST['Vorname'] . ": " . $_POST['phrase_01'] . " " . $_POST['phrase_02'] . " " . $_POST['phrase_03'] . " " . $_POST['phrase_04'] . "\n"; 
             //echo $text;
             file_put_contents($filename, $text, FILE_APPEND);
-            //$statements = file($filename, FILE_IGNORE_NEW_LINES);
-
+            
             //$text = file_get_contents($filename);
             }
         ?>
@@ -79,15 +78,9 @@
                     </form>
 
                 <h2>Unsere top Phrasen!</h2>
-                <!-- <pre> -->
                     <?php 
                         include('list.php');
-                        /*foreach ($statements as $stmt){
-                            echo "<p>". $stmt . "</p>";
-                        }*/
-                        //echo $text;
-                    ?>  
-                <!-- </pre> -->  
+                    ?> 
             </div>
         </div>
 
